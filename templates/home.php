@@ -1,0 +1,17 @@
+<?php
+include "header.php";
+?>
+
+<p class="homeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo nisl, suscipit nec tempor iaculis, molestie vel massa. Donec pulvinar nisi at sapien dapibus faucibus. Etiam libero quam, ornare at mauris in, fringilla ultrices enim. Fusce rutrum tempor eros quis consequat. Morbi tristique ultricies ullamcorper. Phasellus in tellus vitae mauris vestibulum vulputate. Praesent pellentesque, metus vel fringilla maximus, ante augue tempus nulla, non consectetur libero mi quis diam. Proin tempus sollicitudin mi a pretium. Vivamus sollicitudin tortor mauris, id fermentum nulla lacinia at. In a nibh quis lorem tempor molestie sed a leo. Morbi in dignissim arcu, vel suscipit nisl. Pellentesque eu volutpat lacus. Sed finibus lacus nec ornare malesuada. Maecenas arcu tellus, faucibus ac tellus porttitor, blandit blandit enim.
+
+Aenean eu dolor eget dolor luctus congue. Donec sem nisl, condimentum vel iaculis a, imperdiet quis nibh. Vivamus ultricies, erat ac euismod luctus, nisi orci vestibulum purus, sed semper magna eros ac metus. Duis facilisis pharetra posuere. Duis in nulla at mi ultrices vehicula. Duis vehicula nisl non justo sagittis, eu varius nibh ultricies. Nunc auctor, libero id ullamcorper pellentesque, nisi velit dignissim justo, id ultrices tellus libero vitae enim. Curabitur aliquam lectus sed viverra pretium. Nullam consequat, lorem in imperdiet ullamcorper, justo purus pretium ex, eu auctor eros nisi ac ex. Quisque augue libero, pellentesque sit amet nisi eu, mollis auctor nulla. Donec molestie dui eros. Nulla maximus posuere blandit.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec rhoncus sem, ac sagittis ante. Aliquam laoreet arcu ac arcu tristique, nec cursus tellus mattis. Sed nulla turpis, efficitur et rhoncus id, tincidunt tincidunt ante. Pellentesque non mi sed lorem suscipit tempor. Morbi posuere lectus a dolor aliquet, in dapibus metus tincidunt. Vivamus quis pellentesque erat, vehicula varius neque.
+
+Nunc nec dolor sit amet mi tempor venenatis a eu nibh. Nullam consectetur arcu in elit vestibulum, a tempor sem dapibus. Morbi nec lacus malesuada, euismod lorem sit amet, scelerisque sapien. Sed et urna vitae urna ultrices vehicula ac vitae est. Praesent sit amet purus enim. Donec congue pellentesque lacus, at consequat magna aliquam ut. Nullam placerat laoreet lectus. Mauris vulputate at mauris ac feugiat.
+
+Praesent maximus convallis vulputate. Ut vel tellus commodo, efficitur est vel, maximus orci. Nulla posuere elementum neque non imperdiet. Proin sit amet orci libero. Aenean rhoncus eros sit amet turpis dignissim mollis. Cras bibendum, ex ac pellentesque lacinia, magna justo vehicula dui, ac vestibulum diam metus nec enim. Duis pretium ipsum eu sapien semper, id laoreet nisi tincidunt. Aenean dapibus tristique neque, eget dignissim velit scelerisque ac. Suspendisse luctus mollis consectetur. Pellentesque id ornare tellus, eget mollis risus. Donec nisl arcu, suscipit semper est non, condimentum condimentum eros. Curabitur ipsum leo, volutpat vitae luctus ut, congue eget tortor. Sed erat ligula, auctor ac purus non, facilisis molestie elit.</p>
+
+<?php
+include "footer.php";
+?>

@@ -1,0 +1,89 @@
+body {
+  font-family: monospace;
+}
+
+/*
+================================================
+BUTTONS
+===================================================
+*/
+.btn-add {
+  background: #1100cc;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-add:hover {
+  background: transparent;
+  border: 2px solid #1100cc;
+}
+
+.btn-del {
+  background: red;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  float: left;
+  margin-left: 20px;
+}
+
+.btn-del:hover {
+  background: transparent;
+  border: 2px solid red;
+}
+
+.btn-save {
+  background: #119900;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  float: left;
+  margin-left: 20px;
+}
+
+.btn-save:hover,
+.btn-save:focus {
+  background: transparent;
+  border: 2px solid #119900;
+}
+
+/*
+===========================================================
+TEXTBOX AND SELECT
+============================================================
+*/
+.clear-left {
+  clear: left;
+}
+
+.tool-group {
+  background: #555;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.tool-item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tools-5s-tool-name {
+  width: 300px;
+  height: 30px;
+  color: black;
+  font-size: 1.3em;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tools-5s-tool-status {
+  width: 300px;
+  height: 30px;
+  color: black;
+  font-size: 1.3em;
+  margin-top: 2px;
+  clear: both;
+}

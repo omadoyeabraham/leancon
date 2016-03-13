@@ -1,0 +1,240 @@
+html{
+  height: 100%;
+}
+body{
+  background-color: #6e9695;
+  color: #fff;
+  min-height: 100%;
+  //height: 100%;
+  position: relative;
+}
+body:after {
+    content: '';
+    display: block;
+    height: 100px;
+  }
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* a{
+  color: #fff;
+  text-decoration: none;
+}
+/*
+===========================================================
+GRID
+===========================================================
+*/
+
+[class*="col-"]{
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+/*
+============================================================
+NAVIGATION
+============================================================
+*/
+header{
+  background-color: #000333;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 15px;
+
+}
+header nav ul{
+  text-align: right;
+}
+header nav ul li{
+
+  list-style-type: none;
+  font-size: 20px;
+  font-family: monospace;
+  display: inline-block;
+  margin-right: 20px;
+}
+header nav ul li a{
+  padding: 15px;
+}
+header nav ul li a:hover{
+  color: #155a8c;
+  background-color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:focus{
+
+    text-decoration: none;
+}
+.toggle-btn{
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+.toggle-btn span,
+.toggle-btn span::before,
+.toggle-btn span::after{
+  content: "";
+  background-color: red;
+}
+/*
+================================================================
+DROPDOWN
+================================================================
+*/
+/*Drop */
+.dropbtn{
+  cursor: pointer;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+/*Dropdown content hidden by default */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #344552;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+}
+/* Links inside the dropdown */
+.dropdown-content a{
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+/*==================================================================
+FOOTER
+====================================================================
+*/
+
+.footer{
+    text-align: center;
+    background: #000333;
+    padding: 20px;
+  //  position: relative;
+  //  display: block;
+    font-family: monospace;
+  //  height: 150px;
+    z-index: 10;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+
+
+
+}
+
+
+
+/*
+=================================================================
+MEDIA QUERIES
+=================================================================
+*/
+    /*
+    ===================================
+    NAVIGATION
+    ==================================
+    */
+    @media (max-width: 768px) {
+      body{
+      }
+      header nav ul li{
+        display: block;
+        margin-bottom: 30px;
+        padding-bottom: 14px;
+        border-bottom: 2px solid white;
+        text-align: center;
+      }
+      .dropdown{
+        display: block;
+        text-align: center;
+        position: relative;
+      }
+      .dropbtn{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .dropdown-content{
+        position: absolute;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+
+      .sm-hidden{
+        visibility: hidden;
+      }
+
+    }
