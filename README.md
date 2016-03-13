@@ -1,1 +1,1 @@
-# leancon
+A web app used to track building project progress and utilize the 5S, kanban and Lastplanner management systems.
