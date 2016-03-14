@@ -8,24 +8,28 @@
 
     require_once("constants.php");
 
-    /**
-     * Apologizes to user with message.
-     */
-    function apologize($message)
-    {
-        render("apology.php", ["message" => $message]);
-        exit;
-    }
+    /*
+    =========================================================
+    MY OWN PDO CONNECT function
+    ========================================================
+    */
+    function querydb(){
+      try
+          {
+            $connection = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
+            // set the PDO error mode to exception
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected successfully";
+          }
 
-    /**
-     * Facilitates debugging by dumping contents of variable
-     * to browser.
-     */
-    function dump($variable)
-    {
-        require("../templates/dump.php");
-        exit;
-    }
+      catch(PDOException $e)
+                {
+                echo "Connection failed: " . $e->getMessage();
+                }
+    }//end of querydb function
+
+
+
 
     /**
      * Logs out current user, if any.  Based on Example #1 at
@@ -46,7 +50,7 @@
         session_destroy();
     }
 
-    
+
     /**
      * Executes SQL statement, possibly with parameters, returning
      * an array of all rows in result set or false on (non-fatal) error.
@@ -69,7 +73,7 @@
                 $handle = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
 
                 // ensure that PDO::prepare returns false when passed invalid SQL
-                $handle->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); 
+                $handle->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
             }
             catch (Exception $e)
             {

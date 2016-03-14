@@ -17,7 +17,7 @@ include "header.php";
     <form  id="tools-5s" method="post" action="../controllers/save-5s-tools.php" class="clear-left">
       <div class="tool-group">
         <div class="tool-item">
-          <?php require_once("existing-5s-tools.php"); ?>
+          <?php require("existing-5s-tools.php"); ?>
           <!--  <input type="checkbox" name="tools-5s-tool-check"/>
             <input type="text" name="tools-5s-tool-name[]" class="tools-5s-tool-name" placeholder="Enter the tool name"/>
             <select class="tools-5s-tool-status" name="tools-5s-tool-status[]">
